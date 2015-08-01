@@ -27,7 +27,7 @@ public class Fast {
         
         for (int k = 0; k < inputs; k++) {
             Point[] Q = Arrays.copyOf(P, P.length);
-            Arrays.sort(Q, Q[k].SLOPE_ORDER); // Sort the array considering that P[0] is the origin
+            Arrays.sort(Q, Q[k].SLOPE_ORDER); // Sort the array considering that P[0] is the originq
             System.out.print(Q[0]);
             Point x = new Point(10000, 0);
             for (Point y: Q)
@@ -44,6 +44,8 @@ public class Fast {
                         System.out.print(print_string + Q[j]);
                         print_string = " -> ";
                     }
+		    else 
+			continue;
                 }                    
             }
             System.out.println();
